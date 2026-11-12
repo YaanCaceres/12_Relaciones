@@ -42,5 +42,14 @@ class Reloj {
 		Hora *pHora;
 	public:
 		reloj(int h, int m, int s){
-			
+			Hora= new Hora(h,m,s);
+			pDisplay = nullptr; 
+		}
+		void asignarDisplay (Display *pD){
+			pDisplay=pD;
+		}
+		void mostrarReloj(){
+			if (pDisplay != nullptr){
+				
+			}
 		}
